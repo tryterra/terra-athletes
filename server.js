@@ -55,7 +55,6 @@ app.get("/api/connect", function (req, res) {
         "WAHOO",
         "GOOGLE",
         "POLAR",
-        "WEAROS",
         "FREESTYLELIBRE",
         "TEMPO",
         "IFIT",
@@ -65,14 +64,13 @@ app.get("/api/connect", function (req, res) {
         "MYFITNESSPAL",
         "NUTRACHECK",
         "UNDERARMOUR",
-        "OMRON",
       ],
       "EN",
       host + "/api/add",
       host + "/fail"
     )
     .then((s) => {
-      console.log(s.url);
+      console.log(s);
       res.send(JSON.stringify(s));
     });
 });
