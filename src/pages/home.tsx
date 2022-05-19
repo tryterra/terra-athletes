@@ -4,10 +4,10 @@ import Leaderboard from "../components/leaderboard";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-sky-600 text-white min-h-screen">
       <Header />
-      <Leaderboard />
       <ConnectTerra />
+      <Leaderboard />
     </div>
   );
 }
