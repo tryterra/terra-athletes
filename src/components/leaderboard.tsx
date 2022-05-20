@@ -29,7 +29,7 @@ function UserCell(props: { user: User; rank: number }) {
 
   return (
     <div
-      className="p-8 flex flex-wrap justify-between gap-6 text-center m-auto rounded-xl w-full shadow-2xl bg-sky-900 text-white border-2 border-white"
+      className="p-8 flex flex-wrap justify-between gap-2 text-center m-auto rounded-xl w-full shadow-2xl bg-sky-900 text-white border-2 border-white"
       style={{ maxWidth: "400px" }}
     >
       <div className="font-bold grid grid-cols-1 my-auto">
@@ -106,7 +106,7 @@ export default function Leaderboard() {
         <a href="mailto:dev@tryterra.co" className="underline">
           dev@tryterra.co
         </a>{" "}
-        to remove your account
+        for any questions
       </div>
     </div>
   );
