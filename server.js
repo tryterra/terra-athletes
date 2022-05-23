@@ -51,25 +51,12 @@ app.get("/api/connect", function (req, res) {
       [
         "FITBIT",
         "OURA",
-        "TRAININGPEAKS",
         "WITHINGS",
         "SUUNTO",
-        "PELOTON",
-        "ZWIFT",
         "GARMIN",
-        "EIGHT",
-        "WAHOO",
         "GOOGLE",
         "POLAR",
-        "FREESTYLELIBRE",
-        "TEMPO",
         "IFIT",
-        "CONCEPT2",
-        "FATSECRET",
-        "CRONOMETER",
-        "MYFITNESSPAL",
-        "NUTRACHECK",
-        "UNDERARMOUR",
       ],
       "EN",
       host,
@@ -143,7 +130,7 @@ app.get("/api/users", function (req, res) {
 app.post("/api/terra", function (req, res) {
   res.sendStatus(200); // reply to terra we received the payload
   const data = JSON.parse(req.body);
-  console.log(data);
+  console.log(JSON.stringify(data)); // for the sake of logging >:(
   // verify signature
   // const signature = req.headers["terra-signature"];
   // console.log(verifySignature(signature, req.body, process.env.TERRA_SECRET));
